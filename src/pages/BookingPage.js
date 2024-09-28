@@ -50,7 +50,7 @@ const BookingPage = () => {
       }
       dispatch(showLoading());
       const res = await axios.post(
-        `{${BASE_URL}/api/v1/user/book-appointment`,
+        `${BASE_URL}/api/v1/user/book-appointment`,
         {
           doctorId: params.doctorId,
           userId: user._id,
