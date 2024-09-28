@@ -1,0 +1,171 @@
+.main {
+    padding: 10px;
+    height: 100vh;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    
+    background-color: #399918;
+    box-shadow: 0px 0px 2px gray;
+    color: white;
+    overflow-y: auto; /* Add this if you want the sidebar itself to be scrollable */
+}
+
+.layout {
+    display: flex;
+    height: 100vh; /* Ensure the layout takes up the full height of the viewport */
+}
+
+.content {
+    margin-left: 320px; /* Adjust this value based on the width of your sidebar */
+    width: calc(100% - 320px); /* Adjust this value based on the width of your sidebar */
+    overflow-y: auto; /* Make the content area scrollable */
+}
+
+.header {
+    height: 10vh;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 2px grey;
+    background-color: #A6BB8D;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure the header stays on top */
+}
+
+.body {
+    min-height: calc(100vh - 10vh - 40px); /* Adjust for header height and margins */
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 2px grey;
+    background-color: #86C8BC;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.logo h6 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.menu {
+    margin-top: 50px;
+}
+
+.menu-item {
+    margin-top: 30px;
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.menu-item i {
+    font-size: 1.2rem;
+    margin: 0px 15px;
+}
+
+.active {
+    background-color: white;
+    padding: 10px;
+}
+
+.active a, .active i {
+    color: #FF9494;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+    height: 100%;
+}
+
+.header-content .right-section {
+    display: flex;
+    align-items: center;
+}
+
+.header-content .form-inline {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.header-content .form-inline .form-control {
+    margin-right: 10px;
+}
+
+.header-content .form-inline .btn {
+    margin-left: 0px;
+}
+
+.header-content i {
+    margin-right: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.header-content a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    margin: 0px 10px;
+    text-transform: uppercase;
+}
+
+.doctor {
+    margin-bottom: 20px; /* Adjust the value as needed */
+    transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+  }
+  
+  .doctor:hover {
+    transform: scale(1.05); 
+    /* Zoom in slightly */
+  }
+  .doctor:hover .card-header {
+    background-color: #B9B4C7; /* Change header color to green on hover */
+  }
+  .doctor:hover .card-body {
+    background-color: #ECFFE6; /* Change header color to green on hover */
+  }
+
+  .notification {
+    transition: transform 0.3s ease
+  }
+  .notification:hover {
+    transform: scale(1.01); 
+    /* Zoom in slightly */
+  }
+  .notification:hover .card {
+    background-color: #ECFFE6; /* Change header color to green on hover */
+  }
+
+  .search-bar {
+    width: 1000%; /* Adjust the width as needed */
+    max-width: 100vh; /* Optional: Set a maximum width */
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+  }
+  
+  .search-bar {
+    flex: 1;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .search-button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
