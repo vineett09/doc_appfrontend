@@ -68,7 +68,7 @@ const Profile = () => {
   const getDoctorInfo = useCallback(async () => {
     try {
       const res = await axios.post(
-        "/api/v1/doctor/getDoctorInfo",
+        `${BASE_URL}/api/v1/doctor/getDoctorInfo`,
         { userId: params.id },
         {
           headers: {
